@@ -1,0 +1,141 @@
+body {
+    background-color: #B700DB;
+    background-image: linear-gradient(to bottom, #B700DB, #c242db);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+.container {
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    background-color: transparent;
+    color: #333333;
+    font-size: 16px;
+    transition: border-bottom-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-bottom-color: #4D005C;
+}
+
+.form-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: #999999;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus~label,
+.form-group input:valid~label {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    color: #4D005C;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar::before,
+.bar::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #4D005C;
+    transition: all 0.3s ease;
+}
+
+.bar::before {
+    left: 50%;
+}
+
+.bar::after {
+    right: 50%;
+}
+
+input:focus~.bar::before,
+input:focus~.bar::after {
+    width: 50%;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background-color: #4D005C;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4D005C;
+    transform: scale(1.05);
+}
+
+/* Fazer Cadastro */
+
+.signup-link {
+    display: inline;
+    color: #c242db;
+    font-size: 14px;
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+
+}
+
+.center-link {
+    text-align: center;
+}
+
+
+  
+  
